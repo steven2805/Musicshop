@@ -5,10 +5,11 @@ import behaviours.*;
 public class Guitar extends Instrument implements Playable, Sellable {
 
   int strings;
-  int markup;
+  int increase;
+  
 
-  public Guitar(String name, String material, int shopPurchasePrice, int salePrice ,int strings){
-    super(name, material, shopPurchasePrice, salePrice);
+  public Guitar(String name, int shopPurchasePrice, int salePrice, String material ,int strings){
+    super(name, shopPurchasePrice, salePrice, material);
     this.strings = strings;
 
   }
@@ -17,10 +18,10 @@ public class Guitar extends Instrument implements Playable, Sellable {
     return "guitar noise";
   }
 
-  public int markUp(){
-    markup = salePrice - shopPurchasePrice;
-    return markup;
+  public int markUpPecentage(){
+    return shopPurchasePrice / 100 * salePrice;
   }
+
 
 
 

@@ -9,7 +9,7 @@ public class GuitarTest{
 
   @Before 
   public void before(){
-    guitar = new Guitar("Good Guitar","wood",100, 150 ,6);
+    guitar = new Guitar("Good Guitar",100, 150 ,"wood" ,6);
   }
 
   @Test
@@ -40,7 +40,12 @@ public class GuitarTest{
 
   @Test
   public void checkMarkUp(){
-    assertEquals(50, guitar.markUp());
+    assertEquals(50, guitar.markUpPecentage());
+  }
+
+  @Test 
+  public void whatsMyProfitInPounds(){
+    assertEquals(50, guitar.calculateMarkup());
   }
 }
 
