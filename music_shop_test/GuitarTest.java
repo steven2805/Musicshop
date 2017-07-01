@@ -21,4 +21,20 @@ public class GuitarTest{
   public void checkPurchasePrice(){
     assertEquals(100, guitar.getShopPurchasePrice());
   }
+
+
+  @Test 
+  public void checkGuitarIsMakingNoise(){
+    assertEquals("guitar noise", guitar.play());
+  }
 }
+
+
+
+
+
+
+
+
+
+
