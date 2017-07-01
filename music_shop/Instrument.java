@@ -5,13 +5,13 @@ public abstract class Instrument{
 
   String material;
   int shopPurchasePrice;
-  // int salePrice;
+  int salePrice;
 
 
-  public Instrument(String material, int shopPurchasePrice){
+  public Instrument(String material, int shopPurchasePrice, int salePrice){
     this.material = material;
     this.shopPurchasePrice = shopPurchasePrice;
-    // this.salePrice = salePrice;
+    this.salePrice = salePrice;
   }
 
   public String getMaterial(){
@@ -22,9 +22,9 @@ public abstract class Instrument{
     return this.shopPurchasePrice;
   }
 
-  // public int getsalePrice(){
-  //   return this.salePrice;
-  // }
+  public int getSalePrice(){
+    return this.salePrice;
+  }
 
 
 
