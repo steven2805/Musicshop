@@ -2,7 +2,7 @@ package music_shop;
 import behaviours.*;
 
 
-public class Guitar extends Instrument implements Playable {
+public class Guitar extends Instrument implements Playable, Sellable {
 
   int strings;
   int markup;
