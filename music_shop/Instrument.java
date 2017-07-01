@@ -1,14 +1,15 @@
 package music_shop;
 
 
-public abstract class Instrument{
+public abstract class Instrument extends ShopStock {
 
   String material;
   int shopPurchasePrice;
   int salePrice;
 
 
-  public Instrument(String material, int shopPurchasePrice, int salePrice){
+  public Instrument(String name,String material, int shopPurchasePrice, int salePrice){
+    super(name);
     this.material = material;
     this.shopPurchasePrice = shopPurchasePrice;
     this.salePrice = salePrice;

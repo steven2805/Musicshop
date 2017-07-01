@@ -7,7 +7,7 @@ public abstract class ShopStock{
 
 
   public ShopStock(String name){
-    this.name
+    this.name = name;
   }
   
   public String getItemName(){

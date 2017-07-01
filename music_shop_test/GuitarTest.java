@@ -9,7 +9,12 @@ public class GuitarTest{
 
   @Before 
   public void before(){
-    guitar = new Guitar("wood",100, 150 ,6);
+    guitar = new Guitar("Good Guitar","wood",100, 150 ,6);
+  }
+
+  @Test
+  public void checkName(){
+    assertEquals("Good Guitar",guitar.getItemName());
   }
 
   @Test 

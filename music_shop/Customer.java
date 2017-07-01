@@ -5,6 +5,7 @@ import behaviours.*;
 public class Customer{
   String name;
   Playable instrument;
+  
 
   public Customer(String name, Playable instrument){
     this.name = name;
