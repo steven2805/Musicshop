@@ -19,7 +19,7 @@ public class Guitar extends Instrument implements Playable, Sellable {
   }
 
   public int markUpPecentage(){
-    return shopPurchasePrice / 100 * salePrice;
+    return salePrice - shopPurchasePrice/shopPurchasePrice * 100;
   }
 
 
